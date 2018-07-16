@@ -1,0 +1,44 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+  <TemplateData>
+    <Name>MyTemplateDDD</Name>
+    <Description>Template para projeto DDD criado pela Logical Minds</Description>
+    <Icon>Icon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <SolutionFolder Name="0. Presentation">
+      </SolutionFolder>
+      <SolutionFolder Name="1. Services">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Api" CopyParameters="true">
+          MyTemplateDDD.Api\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="2. Application">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Application" CopyParameters="true">
+          MyTemplateDDD.Application\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="3. Domain">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Domain" CopyParameters="true">
+          MyTemplateDDD.Domain\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="4. Infra">
+        <SolutionFolder Name="4.1. Data">
+          <ProjectTemplateLink ProjectName="$safeprojectname$.Infra.Data.Context" CopyParameters="true">
+            MyTemplateDDD.Infra.Data.Context\MyTemplate.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ProjectName="$safeprojectname$.Infra.Data.Repository" CopyParameters="true">
+            MyTemplateDDD.Infra.Data.Repository\MyTemplate.vstemplate
+          </ProjectTemplateLink>
+        </SolutionFolder>
+        <SolutionFolder Name="4.2. CrossCutting">
+          <ProjectTemplateLink ProjectName="$safeprojectname$.Infra.CrossCutting.IoC" CopyParameters="true">
+            MyTemplateDDD.Infra.CrossCutting.IoC\MyTemplate.vstemplate
+          </ProjectTemplateLink>
+        </SolutionFolder>
+      </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

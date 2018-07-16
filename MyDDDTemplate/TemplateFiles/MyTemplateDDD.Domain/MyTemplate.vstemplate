@@ -1,0 +1,73 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>$safeprojectname$.Domain</Name>
+    <Description>&lt;Nenhuma descrição disponível&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>$safeprojectname$.Domain</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <CreateInPlace>true</CreateInPlace>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$ext_safeprojectname$.Domain.csproj" File="MyTemplateDDD.Domain.csproj" ReplaceParameters="true">
+      <Folder Name="Entities" TargetFolderName="Entities">
+        <Folder Name="Common" TargetFolderName="Common">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Entity.cs">Entity.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="EntitySelfValidated.cs">EntitySelfValidated.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Specifications" TargetFolderName="Specifications">
+          <Folder Name="ExampleSpecs" TargetFolderName="ExampleSpecs">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ExampleDescriptionIsRequiredSpec.cs">ExampleDescriptionIsRequiredSpec.cs</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Validations" TargetFolderName="Validations">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExampleValidation.cs">ExampleValidation.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ValidationMessages.resx">ValidationMessages.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ValidationMessages.Designer.cs">ValidationMessages.Designer.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Example.cs">Example.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <Folder Name="Repository" TargetFolderName="Repository">
+          <Folder Name="Common" TargetFolderName="Common">
+            <ProjectItem ReplaceParameters="true" TargetFileName="IRepository.cs">IRepository.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="IRepositoryAsync.cs">IRepositoryAsync.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IExampleRepository.cs">IExampleRepository.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Service" TargetFolderName="Service">
+          <Folder Name="Common" TargetFolderName="Common">
+            <ProjectItem ReplaceParameters="true" TargetFileName="IService.cs">IService.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IExampleService.cs">IExampleService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Specification" TargetFolderName="Specification">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ISpecification.cs">ISpecification.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Validation" TargetFolderName="Validation">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ISelfValidation.cs">ISelfValidation.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IValidation.cs">IValidation.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IValidationRule.cs">IValidationRule.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <Folder Name="Common" TargetFolderName="Common">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Service.cs">Service.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ExampleService.cs">ExampleService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Validation" TargetFolderName="Validation">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Validation.cs">Validation.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValidationError.cs">ValidationError.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValidationResult.cs">ValidationResult.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValidationRule.cs">ValidationRule.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>$safeprojectname$.Application</Name>
+    <Description>&lt;Nenhuma descrição disponível&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>$safeprojectname$.Application</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <CreateInPlace>true</CreateInPlace>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.Application.csproj" File="MyTemplateDDD.Application.csproj" ReplaceParameters="true">
+      <Folder Name="Common" TargetFolderName="Common">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseAppService.cs">BaseAppService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <Folder Name="Common" TargetFolderName="Common">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IBaseAppService.cs">IBaseAppService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IReadOnlyAppService.cs">IReadOnlyAppService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ITransactionAppService.cs">ITransactionAppService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IWriteOnlyAppService.cs">IWriteOnlyAppService.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IExampleAppService.cs">IExampleAppService.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ExampleAppService.cs">ExampleAppService.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

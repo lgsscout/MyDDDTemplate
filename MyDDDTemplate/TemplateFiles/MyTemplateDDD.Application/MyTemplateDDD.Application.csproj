@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\$ext_safeprojectname$.Domain\$ext_safeprojectname$.Domain.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Infra.Data.Context\$ext_safeprojectname$.Infra.Data.Context.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Infra.Data.Repository\$ext_safeprojectname$.Infra.Data.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

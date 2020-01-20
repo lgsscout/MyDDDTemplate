@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
     <Name>MyTemplateDDD</Name>
-    <Description>Template para projeto DDD criado pela Logical Minds</Description>
+    <Description>Template para projeto DDD</Description>
     <Icon>Icon.ico</Icon>
     <ProjectType>CSharp</ProjectType>
   </TemplateData>
